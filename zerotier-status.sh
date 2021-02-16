@@ -1,0 +1,1 @@
+ API="yourApoiTokenHere" ; NETWORK="yourNetworkIDHere"; curl --silent -X GET -H "Authorization: bearer $API" https://my.zerotier.com/api/network/$NETWORK/member | jq '.[] | .name , .online'  | grep true -B1
